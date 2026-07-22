@@ -2,7 +2,7 @@
   var t = localStorage.getItem("token") || "NOTOKEN";
 
   function reg(uname, blob) {
-    fetch("https://lab-1784736030322-iqkdwd.labs-app.bugforge.io//api/register", {
+    fetch("https://lab-1784736030322-iqkdwd.labs-app.bugforge.io/api/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
